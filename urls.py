@@ -17,13 +17,13 @@ urlpatterns = patterns('',
                        # url(r'^admin/', include(admin.site.urls)),
                        url(r'^$', 'view.index'),
                        url(r'.*css/(?P<path>.*)$', 'django.views.static.serve',
-                           {'document_root': '/home/slevin/workspace/website/static/css'}
+                           {'document_root': '/workspace/website/static/css'}
                            ),
                        url(r'.*js/(?P<path>.*)$', 'django.views.static.serve',
-                           {'document_root': '/home/slevin/workspace/website/static/js'}
+                           {'document_root': '/workspace/website/static/js'}
                            ),
                        url(r'.*img/(?P<path>.*)$', 'django.views.static.serve',
-                           {'document_root': '/home/slevin/workspace/website/static/img'}
+                           {'document_root': '/workspace/website/static/img'}
                            ),
                        url(r'^article', 'view.index'),
                        url(r'^deploy', 'view.index'),
