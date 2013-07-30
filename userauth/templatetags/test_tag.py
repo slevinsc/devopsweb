@@ -28,7 +28,7 @@ class NavTagItem(template.Node):
         cur_id = ''
         if current:
             cur_id = ' id="current" '
-        return '<h3><li ><a  %s href="%s" class="bootstro"  data-bootstro-placement="bottom">%s </a></li></h3>' % (cur_id, self.path, self.text)
+        return '<h3><li ><a  %s href="%s" class="bootstro" >%s </a></li></h3>' % (cur_id, self.path, self.text)
 
 # 注册tag，函数基本就是这个样子，不怎么会有变化
 
